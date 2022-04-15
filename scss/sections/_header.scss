@@ -1,0 +1,143 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ECECEC;
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__logo {
+        margin-right: 93px;
+    }
+
+    &__menu-list {
+        display: flex;
+    }
+
+    &__menu-item:not(:first-child) {
+        margin-left: 50px;
+    }
+
+    &__menu-item {
+        position: relative;
+    }
+
+    &__menu-item.--selected::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        bottom: -29px;
+        background-color: var(--third-color);
+        border-radius: 2px;
+    }
+    
+    &__menu-link {
+        color: var(--second-color);
+        font-weight: 500;
+        transition: color 250ms var(--cubic-b);
+    }
+
+    &__menu-link:hover,
+    &__contacts-link:hover {
+        color: var(--third-color);
+    }
+    
+    
+    
+
+}
+
+// .logo {
+//     font-family: 'Raleway', sans-serif;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 31px;
+
+//     text-decoration: none;
+//     color: var(--third-color);
+// }
+
+// .header__logo {
+//     margin-right: 93px;
+// }
+
+
+// .logo__colored {
+//     color: #000
+// }
+
+// .header__menu-list {
+//     display: flex;
+// }
+
+// .header__menu-item:not(:first-child) {
+//     margin-left: 50px;
+// }
+
+// .header__menu-item {
+//     position: relative;
+// }
+
+// .header__menu-item.--selected::after {
+//     content: '';
+//     position: absolute;
+//     height: 4px;
+//     width: 100%;
+//     left: 0;
+//     bottom: -29px;
+//     background-color: var(--third-color);
+//     border-radius: 2px;
+
+// }
+
+// .header__menu-link {
+//     color: var(--second-color);
+//     font-weight: 500;
+//     transition: color 250ms var(--cubic-b);
+// }
+
+
+.header__menu-link:hover,
+.header__contacts-link:hover {
+    color: var(--third-color);
+}
+
+
+.header__menu-link:focus,
+.header__contacts-link:focus {
+    color: var(--white-color);
+    color: var(--third-color);
+    outline-color: var(--third-color);
+}
+
+.header__contacts-link:hover 
+.header__contacts-img {
+    fill: var(--third-color);
+}
+
+.header__contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header__contacts-item +
+.header__contacts-item {
+    margin-left: 50px;
+}
+
+.header__contacts-link {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-weight: 500;
+    transition: color 250ms var(--cubic-b);
+}
+
+.header__contacts-img {
+    margin-right: 10px;
+    fill: var(--main-color);
+    transition: 0.4s;
+}

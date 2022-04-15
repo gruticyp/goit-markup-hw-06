@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --main-color: #757575;
+  --second-color: #212121;
+  --third-color: #2196F3;
+  --white-color: #FFFFFF;
+  --cubic-b: cubic-bezier(0.4, 0, 0.2, 1)
+;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--second-color);
+  /* font-family: 'Roboto' sans-serif; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.logo__colored {
+  color: #000;
+}
+
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__logo {
+  margin-right: 93px;
+}
+
+.header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-item.--selected::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: -29px;
+  background-color: var(--third-color);
+  border-radius: 2px;
+}
+
+.header__menu-link {
+  color: var(--second-color);
+  font-weight: 500;
+  -webkit-transition: color 250ms var(--cubic-b);
+  transition: color 250ms var(--cubic-b);
+}
+
+.header__menu-link:hover, .header__contacts-link:hover {
+  color: var(--third-color);
+}
+
+.header__menu-link:hover,
+.header__contacts-link:hover {
+  color: var(--third-color);
+}
+
+.header__menu-link:focus,
+.header__contacts-link:focus {
+  color: var(--white-color);
+  color: var(--third-color);
+  outline-color: var(--third-color);
+}
+
+.header__contacts-link:hover
+.header__contacts-img {
+  fill: var(--third-color);
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.header__contacts-item +
+.header__contacts-item {
+  margin-left: 50px;
+}
+
+.header__contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--main-color);
+  font-weight: 500;
+  -webkit-transition: color 250ms var(--cubic-b);
+  transition: color 250ms var(--cubic-b);
+}
+
+.header__contacts-img {
+  margin-right: 10px;
+  fill: var(--main-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=main.css.map */
